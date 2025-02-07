@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Istok Web", sans-serif;
+}
+
+.overall {
+    width: 100%;
+    background-color: #212121;
+    overflow:hidden;
+}
+
+nav {
+    position: fixed;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    z-index: 1000;
+    background-color: #212121;
+}
+
+nav div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: xx-large;
+}
+
+input {
+    display: none;
+}
+
+.dark-button:checked~.search{
+    display: block;
+}
+
+
+main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-height: 100vh;
+    padding: 80px 10px 10px 10px;
+}
+
+aside {
+    right: -1000px;
+    width: 370px;
+    height: 88vh;
+    background-image:linear-gradient(to right, gold, orangered);
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 20px;
+    overflow: auto;
+    transition: all 1s;
+}
+
+aside:hover {
+    background-image: linear-gradient(to right, white, grey);
+}
+
+.cart-button:checked~aside{
+    right: -20px;
+    top: 70px;
+    z-index: 900;
+    position: fixed;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+.title {
+    font-size: larger;
+}
+
+.cart-table {
+    width: 95%;
+    border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.cart-table th {
+    font-weight: bold;
+}
+
+.cart-table tfoot {
+    font-weight: bold;
+}
+
+.search {
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+    nav h1{
+        font-size: medium;
+    }
+    .search {
+        padding: 5px 5px;
+        width: 100px;
+    }
+}
