@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaSearch, FaCartPlus } from "react-icons/fa";
 import Pro from './Product';
 import './App.css';
-import ball1 from './images/basket_ball.jpg';
+import ball1 from './images/baseball_ball.jpg';
 import ball2 from './images/basket_ball.jpg';
 import ball3 from './images/beach_volley_ball.jpg';
 import ball4 from './images/bowling_ball.jpg'
